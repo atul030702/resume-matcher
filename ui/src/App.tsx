@@ -1,13 +1,11 @@
+import { RouterProvider } from "react-router";
+import { router } from "./components/Layout/BrowserRouter";
 import ThemeProvider from "./components/ThemeProvider/ThemeProvider";
 
-import Hero from "./components/LandingPage/Hero";
-import Navbar from "./components/LandingPage/Navbar";
-
-function App() { 
+function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <Navbar />
-      <Hero />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

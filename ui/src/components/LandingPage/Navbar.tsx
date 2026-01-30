@@ -9,7 +9,7 @@ const Navbar = () => {
                     <div className="bg-blue-600 p-1.5 rounded-lg">
                         <Zap className="w-5 h-5 text-white fill-white" />
                     </div>
-                    <span className='text-xl font-bold tracking-tight text-slate-900'>
+                    <span className='text-xl font-bold tracking-tight text-slate-900 dark:text-white'>
                         Resume Matcher
                     </span>
                 </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-4">
                     <ModeToggle />
                     <button type="button"
-                        className='px-5 py-2 text-sm font-semibold rounded-full transition-all active:scale-95 bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-200'
+                        className='px-4 py-2 text-lg font-bold rounded-lg transition-all active:scale-95 bg-blue-600 text-white hover:bg-blue-700 cursor-pointer'
                     >
                         Sign In
                     </button>
